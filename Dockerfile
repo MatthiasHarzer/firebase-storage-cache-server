@@ -10,6 +10,6 @@ COPY . /firebase-storage-cache-server
 WORKDIR /firebase-storage-cache-server
 
 # Install dependencies
-# RUN python -m pip install -r requirements.txt
+ RUN python -m pip install -r requirements.txt
 
 CMD ["uvicorn", "server:app", "--host", "0.0.0.0" , "--port", "8000"]
