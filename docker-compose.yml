@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  firebase-storage-cache-server:
+    build:
+      context: https://github.com/MatthiasHarzer/firebase-storage-cache-server.git
+      dockerfile: Dockerfile
+    ports:
+      - "9998:8000"
+    volumes:
+      - ./cache:/firebase-storage-cache-server/cache
+    restart: always
