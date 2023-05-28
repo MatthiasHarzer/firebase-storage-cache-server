@@ -1,10 +1,7 @@
 import base64
-import gzip
 import json
 import os
-import time
 import urllib.request
-from typing import IO
 
 from fastapi import FastAPI, Request
 from fastapi.responses import Response
