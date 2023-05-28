@@ -1,6 +1,6 @@
 # A Simple File Cache Server For [Firebase Cloud Storage](https://firebase.google.com/docs/storage)
 
-Caches files from the Firebase Cloud Storage. This project aims to reduce the traffic of the Firebase Cloud Storage, which is limited to 1GB per day, thus cutting costs.
+Caches files from the Firebase Cloud Storage. This project aims to reduce the traffic of the Firebase Cloud Storage, which is limited to 1GB per day for free, thus cutting costs.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
