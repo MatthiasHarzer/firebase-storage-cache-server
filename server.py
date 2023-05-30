@@ -74,7 +74,7 @@ def scale_image(cached_image: CachedImage, width: int, height: int) -> CachedIma
     image_from_bytes.thumbnail((width, height), Image.LANCZOS)
 
     buffered = io.BytesIO()
-    image_from_bytes.save(buffered, format="JPEG")
+    image_from_bytes.save(buffered, format="PNG")
 
     return CachedImage(content_type=cached_image.content_type, content=buffered.getvalue())
 
