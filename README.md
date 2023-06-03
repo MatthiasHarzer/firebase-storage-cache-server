@@ -4,7 +4,7 @@ Caches files and sclaes images from the Firebase Cloud Storage. This project aim
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Note, that the access rights to the assets will be preserved. The `access-token` passed with the `url` will be validated by firebase, even when the file is cached on the server.
+Note, that the access rights to the assets will be preserved. The `token` passed with the `url` will be validated by firebase, even when the file is cached on the server.
 
 ### Installation
 - Copy the [`docker-compose.yml`](./docker-compose.yml) file into your local directory.
