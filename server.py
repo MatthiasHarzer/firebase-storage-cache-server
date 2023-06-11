@@ -8,6 +8,7 @@ import PIL
 import requests
 from PIL import Image
 from fastapi import FastAPI, Request, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
 
 CACHE_DIR = "./cache"
@@ -20,10 +21,18 @@ FIREBASE_BASE_URL = "firebasestorage.googleapis.com"
 The base url of the firebase storage.
 """
 
-app = FastAPI()
-
 if not os.path.exists(CACHE_DIR):
     os.makedirs(CACHE_DIR)
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @dataclass
