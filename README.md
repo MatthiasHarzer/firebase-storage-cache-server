@@ -28,3 +28,8 @@ e.g.:
 - `/scale/500x700?url=https://firebasestorage...` Scales the image to `500 x 700` while keeping the aspect ratio.
 - `/scale/300?url=https://firebasestorage...` Scales the image to `300 x 300`
 
+#### Cache location
+By default, all assets will be cache on the host machine in the `./cache` folder relative to `docker-compose.yml` file. This can be changed by modifying the `docker-compose.yml` file.
+
+#### Note on `.cache` files
+All assets will be saved in `.cache` files, which contain the mime-type of the asset, as well as the binary content. Files are stored without any compression, thus cache files may be significantly larger than the original asset.
