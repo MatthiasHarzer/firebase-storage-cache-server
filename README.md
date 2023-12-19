@@ -1,4 +1,4 @@
-# A Simple File Cache Server For [Firebase Cloud Storage](https://firebase.google.com/docs/storage)
+# A Simple File Cache Server For The [Firebase Cloud Storage](https://firebase.google.com/docs/storage)
 
 Caches files and scales images from the Firebase Cloud Storage. This project aims to reduce the traffic of the Firebase Cloud Storage, which is limited to 1GB per day for free, thus cutting costs.
 
@@ -30,6 +30,3 @@ e.g.:
 
 #### Cache location
 By default, all assets will be cache on the host machine in the `./cache` folder relative to `docker-compose.yml` file. This can be changed by modifying the `docker-compose.yml` file.
-
-#### Note on `.cache` files
-All assets will be saved in `.cache` files, which contain the mime-type of the asset, as well as the binary content. Files are stored without any compression, thus cache files may be significantly larger than the original asset.
